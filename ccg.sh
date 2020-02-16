@@ -115,7 +115,7 @@ function donwload_all
     log "donwload_all(): Start"
 
     local c
-    for ((c=0; c < $S_PAGES; c++))
+    for ((c=1; c <= $S_PAGES; c++))
     do
         coub_api_request $c
         donwload_page $c
